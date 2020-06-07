@@ -1,0 +1,153 @@
+.material.mat-mini-fab{
+    width: 35px;
+    height: 35px;
+    line-height: 35px;
+}
+i.material-icons{
+    font-size: 20px;
+    color: var(--icon-color);
+}
+mat-toolbar{
+    i.material-icons{
+        font-size: 20px;
+        color: white;
+    }
+}
+.mat-badge-content{
+    height: 20px !important;
+    width: 20px !important;
+    line-height: 20px !important;
+}
+.mat-input-element{
+    font-size: 12px !important;
+    color:var(--text-color) !important;
+}
+.mat-form-field-infix{
+    width: unset !important;
+}
+.mat-button-wrapper{
+    height: 30px;   
+    line-height: 30px;
+    display: grid;
+    place-items: center;
+}
+.mat-input-placeholder {
+    // color: #fff;
+    font-size: 12px !important;
+}
+mat-form-field{
+    mat-label{
+        font-size: 12px;
+    }
+}
+.mat-form-field-label{
+    font-size: 12px !important;
+}
+
+.mat-option{
+    height: 25px !important;
+    line-height: 25px !important;
+    .mat-option-text{
+        font-size: 12px;
+    }
+}
+
+.mat-checkbox-inner-container{
+    height: 14px !important;
+    width: 14px !important;
+}
+
+@mixin change-button-size($btnsize,$fontsize) {
+    height: $btnsize;
+    width: $btnsize;
+    line-height: $btnsize;
+    span{
+        height: $btnsize;
+        padding: 0px !important;
+        i{
+            font-size: $fontsize;
+        }
+    }
+}
+.mat-mini-fab.mdb-25{
+    @include change-button-size(25px, 13px);
+}
+.mat-mini-fab.mdb-30{
+    @include change-button-size(30px, 15px);
+}
+.mat-mini-fab.mdb-40{
+    @include change-button-size(40px, 20px);
+}
+.mat-mini-fab.mdb-35{
+    @include change-button-size(35px, 20px);
+}
+@mixin change-mat-menu-size($width){
+    max-width: none;
+    width: $width;
+    max-width: 100vw;
+    margin-left: -8px;
+    margin-top: 24px;
+}
+
+.mat-menu-panel.cart-items {
+   @include change-mat-menu-size(330px)
+}
+.mat-menu-panel.header-user-profile-dd {
+    @include change-mat-menu-size(280px)
+}
+@mixin change-mat-chip-size($size,$fontSize){
+    font-size: $fontSize;
+    padding: 0px;
+    width: $size;
+    height: 30px;
+    box-sizing: border-box;
+    max-height: 30px;
+    min-width: $size;
+    max-width: $size;
+    display: grid;
+    margin: 0px !important;
+}
+
+mat-chip-list{
+    .mat-chip-list-wrapper{
+        display: grid;
+        grid-auto-columns: max-content;
+        grid-auto-flow: column;
+        column-gap: 5px;
+        margin: 0px;
+        mat-chip.same{
+            @include change-mat-chip-size(40px, 10px);
+            span{
+                place-self:center center;
+            }
+        }
+    }
+}
+.material-icons{
+    cursor: pointer;
+}
+
+.custom-shadow{
+    box-shadow: 0px 2px 1px -1px rgba(0, 0, 0, 0.2), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+}
+
+mat-expansion-panel-header {
+    background-color: $primary;
+    &:hover{
+        background-color: $primary !important;
+    }
+}
+
+.mat-radio-container{
+    height: 15px !important;
+    width: 15px !important;
+}
+.mat-radio-outer-circle{
+    height: 15px !important;
+    width: 15px !important;
+}
+.mat-radio-inner-circle{
+    height: 15px !important;
+    width: 15px !important;
+}
+

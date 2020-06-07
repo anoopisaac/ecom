@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .header {
+            display: grid;
+            grid-template-areas: 'header';
+            background-color: black;
+            /* background-image: url(https://cdn.shopify.com/s/files/1/0262/5404/9346/files/banner-withou-text.png?v=1587930532); */
+        }
+
+        img {
+            grid-area: header;
+            width: 500px;
+            justify-self: start;
+        }
+
+        .banner-text {
+            grid-area: header;
+            justify-self: end;
+            position: relative;
+            right: 50px;
+            display: grid;
+            align-self: center;
+            top: 100px;
+
+        }
+
+        @media screen and (min-width: 768px) {
+            .banner-text {
+                top: 0px;
+            }
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="header">
+        <link href="https://fonts.googleapis.com/css?family=Cinzel|Great+Vibes&display=swap" rel="stylesheet">
+        <!-- <img src="" alt="" src="./banner-img-responsive.png"> -->
+        <img src="banner-img-responsive.png">
+        <div class="banner-text">
+            <span class="mega-title txt">Rise and Shine, this is your Moment</span>
+            <span class="sub-title txt">Jewelry Collection 2020</span>
+        </div>
+    </div>
+</body>
+
+</html>
